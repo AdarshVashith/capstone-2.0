@@ -1,0 +1,142 @@
+.recipe-page {
+    font-family: sans-serif;
+    color: #222;
+    background: #f8f8f8;
+  }
+  
+  .top-bar {
+    background: #444;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .top-bar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .top-bar nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .search-section {
+    background: #fff;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .search-controls {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .search-controls input {
+    padding: 0.8rem;
+    width: 400px;
+    border-radius: 999px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .search-controls button {
+    background: #ffcc00;
+    border: none;
+    border-radius: 999px;
+    padding: 0 1.2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+  
+  .search-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .filters {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 0.9rem;
+  }
+  
+  .filters label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  
+  .recipe-list {
+    padding: 2rem;
+  }
+  
+  .recipe-list h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    position: relative;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 1rem;
+  }
+  
+  .card-content h4 {
+    margin: 0 0 0.5rem;
+  }
+  
+  .card-content p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .card-content .tag {
+    background: #eee;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    display: inline-block;
+    margin-top: 0.5rem;
+  }
+  
+  .favorite {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: white;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  
