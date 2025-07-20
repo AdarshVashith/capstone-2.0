@@ -2,7 +2,6 @@ import { initializeApp } from 'firebase/app';
 import { getAuth, connectAuthEmulator } from 'firebase/auth';
 import { getFirestore, connectFirestoreEmulator } from 'firebase/firestore';
 
-// Demo Firebase configuration for development
 const firebaseConfig = {
   apiKey: "AIzaSyDemo-Kitchen-Recipe-Finder-Key-123456789",
   authDomain: "kitchen-recipe-finder-demo.firebaseapp.com",
