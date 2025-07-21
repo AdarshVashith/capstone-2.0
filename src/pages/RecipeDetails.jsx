@@ -233,7 +233,7 @@ const RecipeDetails = () => {
           <p className="text-gray-600 mb-6">The recipe you're looking for doesn't exist.</p>
           <button
             onClick={() => navigate('/')}
-            className="px-6 py-3 bg-orange-600 text-white rounded-md hover:bg-orange-700 transition-colors"
+            className="px-6 py-3 bg-red-600 text-white rounded-md hover:bg-orange-700 transition-colors"
           >
             Back to Home
           </button>
