@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
-import { ChefHat, Home, Heart, Star, LogOut, User } from 'lucide-react';
+import { Home, Heart, Star, LogOut, User } from 'lucide-react';
+import logo from '../assets/logo1.jpeg';
 
 const Navbar = () => {
   const { currentUser, logout } = useAuth();
@@ -22,7 +23,11 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2 text-orange-600 hover:text-orange-700 transition-colors">
-            <ChefHat className="h-8 w-8" />
+          <img
+          src={logo}
+          alt="Kitchen Logo"
+          className="h-8 w-8 object-contain"
+        />
             <span className="text-2xl font-bold">Kitchen</span>
           </Link>
 
