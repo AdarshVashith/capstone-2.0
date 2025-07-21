@@ -157,7 +157,7 @@ const Login = () => {
           </div>
 
           {/* Demo Credentials */}
-          <div className="mt-6 p-4 bg-gray-50 rounded-md">
+          <div className="mt-6 p-4 bg-gray-100 rounded-md">
             <p className="text-sm text-gray-600 text-center">
               <strong>Demo Credentials:</strong><br />
               Email: demo@kitchen.com<br />
