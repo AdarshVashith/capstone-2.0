@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
-import { Home, Heart, Star, LogOut, User } from 'lucide-react';
-import logo from '../assets/logo1.jpeg';
+import { ChefHat, Home, Heart, Star, LogOut, User, Phone } from 'lucide-react';
 
 const Navbar = () => {
   const { currentUser, logout } = useAuth();
@@ -23,11 +22,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2 text-orange-600 hover:text-orange-700 transition-colors">
-          <img
-          src={logo}
-          alt="Kitchen Logo"
-          className="h-8 w-8 object-contain"
-        />
+            <ChefHat className="h-8 w-8" />
             <span className="text-2xl font-bold">Kitchen</span>
           </Link>
 
@@ -62,6 +57,16 @@ const Navbar = () => {
             >
               <Star className="h-4 w-4" />
               <span>Reviews</span>
+            </Link>
+            
+            <Link 
+              to="/contact" 
+              className={`flex items-center space-x-1 px-3 py-2 rounded-md transition-colors ${
+                isActive('/contact') ? 'text-orange-600 bg-orange-50' : 'text-gray-700 hover:text-orange-600 hover:bg-gray-50'
+              }`}
+            >
+              <Phone className="h-4 w-4" />
+              <span>Contact</span>
             </Link>
           </div>
 
@@ -123,6 +128,15 @@ const Navbar = () => {
             >
               <Star className="h-5 w-5 mb-1" />
               <span>Reviews</span>
+            </Link>
+            <Link 
+              to="/contact" 
+              className={`flex flex-col items-center py-2 px-1 text-xs ${
+                isActive('/contact') ? 'text-orange-600' : 'text-gray-600'
+              }`}
+            >
+              <Phone className="h-5 w-5 mb-1" />
+              <span>Contact</span>
             </Link>
           </div>
         </div>
